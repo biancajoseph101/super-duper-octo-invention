@@ -62,6 +62,8 @@ A website created in preparation for moving to Australia. A detailed description
 
 Images: [DuckDuckGo](www.duckduckgo.com)
 
+Descriptions: [AustralianSky] (https://www.australiansky.co.uk/travel-inspiration/top-10-cities-in-australia)
+
 Markdown Guide: ia.net
 
 Markdown Cheatsheet: [GitHub](www.github.com)
