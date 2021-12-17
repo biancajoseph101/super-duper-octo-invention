@@ -16,6 +16,7 @@ const createCity = async (req, res) => {
 
 const createExperience = async (req, res) => {
   try {
+    console.log(req.body);
     const experience = await new Experience(req.body);
     await experience.save();
     return res.status(201).json({

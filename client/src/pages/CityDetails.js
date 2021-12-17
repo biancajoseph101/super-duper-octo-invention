@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ExperienceCard from '../components/ExperienceCard';
+import AddExperience from '../components/AddExperience';
 
 export default function CityDetails(props) {
   const [selectedCity, setSelectedCity] = useState(null);
@@ -31,7 +32,7 @@ export default function CityDetails(props) {
         <p>{selectedCity.description}</p>
       </section>
       <h1> Bucket List: </h1>
-      {/* <SubmitExperience {...props} /> */}
+      <AddExperience {...props} />
       {experiences.map((experience) => {
         if (experience.city_id === props.match.params.cityId) {
           return (

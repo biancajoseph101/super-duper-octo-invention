@@ -12,9 +12,9 @@ app.use(cors());
 app.use(express.json());
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.get('/', (req, res) => {
-  res.send('This is root!');
-});
+// app.get('/', (req, res) => {
+//   res.send('This is root!');
+// });
 
 app.use('/api', routes);
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));

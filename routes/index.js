@@ -5,6 +5,7 @@ const router = Router();
 router.get('/', (req, res) => res.send('This is root!'));
 
 router.post('/cities', controllers.createCity);
+
 router.post('/experiences', controllers.createExperience);
 
 router.get('/cities', controllers.getAllCities);
