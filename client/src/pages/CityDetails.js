@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ExperienceCard from '../components/ExperienceCard';
-import SubmitExperience from '../components/SubmitExperience';
 
 export default function CityDetails(props) {
   const [selectedCity, setSelectedCity] = useState(null);
   const [experiences, setExperiences] = useState([]);
 
-  const getRide = async () => {
+  const getCity = async () => {
     const res = await axios.get(
       `http://localhost:3001/api/cities/details/${props.match.params.cityId}`
     );
@@ -31,7 +30,7 @@ export default function CityDetails(props) {
         <img src={selectedCity.url} />
         <p>{selectedCity.description}</p>
       </section>
-      <SubmitExperience {...props} />
+      {/* <SubmitExperience {...props} /> */}
       {experiences.map((experience) => {
         if (experience.city_id === props.match.params.cityId) {
           return (

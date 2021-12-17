@@ -35,12 +35,21 @@ const getAllCities = async (req, res) => {
   }
 };
 
+const getAllExperiences = async (req, res) => {
+  try {
+    const experiences = await Experience.find();
+    return res.status(200).json({ experiences });
+  } catch (error) {
+    return res.status(500).send(error.message);
+  }
+};
+
 const getCityById = async (req, res) => {
   try {
     const { _id } = req.params;
     const city = await City.findById(_id);
     if (city) {
-      return res.status(200).json({ ride });
+      return res.status(200).json({ city });
     }
     return res.status(404).send(`City with the specified ID does not exists`);
   } catch (error) {
@@ -74,7 +83,7 @@ const updateExperience = async (req, res) => {
         if (err) {
           res.status(500).send(err);
         }
-        if (!plant) {
+        if (!experience) {
           res.status(500).send('Experience not found!');
         }
         return res.status(200).json(experience);
@@ -92,7 +101,7 @@ const updateCity = async (req, res) => {
       if (err) {
         res.status(500).send(err);
       }
-      if (!plant) {
+      if (!city) {
         res.status(500).send('City not found!');
       }
       return res.status(200).json(city);
@@ -132,6 +141,7 @@ module.exports = {
   createCity,
   createExperience,
   getAllCities,
+  getAllExperiences,
   getCityById,
   getExperienceById,
   deleteCity,

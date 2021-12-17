@@ -9,6 +9,8 @@ router.post('/experiences', controllers.createExperience);
 
 router.get('/cities', controllers.getAllCities);
 
+router.get('/experiences', controllers.getAllExperiences);
+
 router.get('/cities/details/:_id', controllers.getCityById);
 
 router.get('/experiences/details/:_id', controllers.getExperienceById);
