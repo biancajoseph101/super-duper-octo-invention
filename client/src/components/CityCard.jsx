@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CityCard.css'
+import '../styles/CityCard.css'
 
 export default function CityCard(props) {
   return (

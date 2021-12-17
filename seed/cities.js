@@ -17,7 +17,7 @@ const main = async () => {
     },
     {
       name: 'Hobart',
-      url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.qantas.com%2Fcontent%2Fdam%2Ftravelinsider%2Fimages%2Fexplore%2Faustralia%2Ftasmania%2Fhobart%2Fhobart-accommodation-restaurants-what-to-do-in-weekend-trip%2Fhobart-waterfront-sunset.jpg&f=1&nofb=1',
+      url: 'https://images.unsplash.com/photo-1550985164-a0cfcf77eab2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80',
       description: `Hobart is the high-impact Tasmanian capital (and Australia's second-oldest city, after Sydney) that's shaken off its sleepy reputation and emerged as one of the hippest southernmost hotspots. Dominated by Mount Wellington, it comes with a dynamic and daring art scene (most famously David Walsh's incredible Museum of Old and New Art, known as MONA), picturesque waterways, rugged mountains, award-winning gourmet experiences, world-class festivals, and a whole lot of wilderness.`
     },
     {

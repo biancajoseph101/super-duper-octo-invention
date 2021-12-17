@@ -17,7 +17,21 @@ const main = async () => {
       city_id: melbourne[0]._id
     },
     {
+      bucketlist_item:
+        'Pet a koala',
+      city_id: melbourne[0]._id
+    },
+    {
+      bucketlist_item:
+        'Learn melly slang',
+      city_id: melbourne[0]._id
+    },
+    {
       bucketlist_item: 'Take the Kuranda Scenic Railway',
+      city_id: cairns[0]._id
+    },
+    {
+      bucketlist_item: 'Try vegemite',
       city_id: cairns[0]._id
     },
     {
@@ -25,7 +39,15 @@ const main = async () => {
       city_id: hobart[0]._id
     },
     {
+      bucketlist_item: 'Visit Jemma',
+      city_id: hobart[0]._id
+    },
+    {
       bucketlist_item: 'Visit the GoMA',
+      city_id: brisbane[0]._id
+    }
+    {
+      bucketlist_item: 'Go snorkeling',
       city_id: brisbane[0]._id
     }
   ];
