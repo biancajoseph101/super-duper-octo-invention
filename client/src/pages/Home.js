@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import CityCard from '../components/CityCard';
 import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
 export default function Home(props) {
+  let history = useHistory();
+
   const [cities, setCities] = useState([]);
 
   useEffect(() => {
@@ -20,7 +23,12 @@ export default function Home(props) {
           {cities.map((city) => {
             {
               return (
-                <CityCard key={city._id} name={city.name} image={city.url} />
+                <CityCard
+                  key={city._id}
+                  onClick={() => history.push(`/cities/details/${city._id}`)}
+                  name={city.name}
+                  image={city.url}
+                />
               );
             }
           })}

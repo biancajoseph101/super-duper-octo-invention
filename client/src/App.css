@@ -1,8 +1,18 @@
 body {
   background-color: pink;
   font: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 img {
   height: 200px;
   width: 300px;
+  padding: 10px;
+}
+
+.city-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './pages/Home';
-import CityCard from './components/CityCard';
+import CityDetails from './pages/CityDetails';
 
 function App() {
   return (
@@ -14,8 +14,10 @@ function App() {
       </header>
       <Switch>
         <Route exact path="/" component={(props) => <Home {...props} />} />
-
-        <Route exact path="/cities" component={CityCard} />
+        <Route
+          path="/cities/details/:cityId"
+          render={(props) => <CityDetails {...props} />}
+        />
       </Switch>
     </div>
   );
