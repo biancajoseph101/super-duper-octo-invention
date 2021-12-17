@@ -5,7 +5,7 @@ function Nav() {
   return (
     <nav className="navbar">
       <Link to="/" style={{ textDecoration: 'none', color: 'black', fontFamily: 'Copperplate, Papyrus, fantasy' }}>Home</Link><br />
-    </nav>
+      <Link to="/map" style={{ textDecoration: 'none', color: 'black', fontFamily: 'Copperplate, Papyrus, fantasy' }}>Map</Link>    </nav>
   );
 }
 

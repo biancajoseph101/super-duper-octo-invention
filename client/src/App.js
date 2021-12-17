@@ -4,11 +4,11 @@ import { Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import CityDetails from './pages/CityDetails';
+import Map from './pages/Map';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
       <header>
         <Nav />
       </header>
@@ -18,6 +18,7 @@ function App() {
           path="/cities/details/:cityId"
           render={(props) => <CityDetails {...props} />}
         />
+        <Route exact path="/map" component={Map} />
       </Switch>
     </div>
   );

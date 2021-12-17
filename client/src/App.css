@@ -2,8 +2,6 @@ body {
   background-color: pink;
   font: green;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 img {
   height: 200px;
@@ -15,4 +13,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }

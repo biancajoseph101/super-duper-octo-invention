@@ -33,7 +33,6 @@ export default function Home(props) {
             }
           })}
         </div>
-        Cities
       </section>
     </div>
   );
