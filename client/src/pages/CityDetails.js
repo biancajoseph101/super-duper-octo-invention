@@ -30,6 +30,7 @@ export default function CityDetails(props) {
         <img src={selectedCity.url} />
         <p>{selectedCity.description}</p>
       </section>
+      <h1> Bucket List: </h1>
       {/* <SubmitExperience {...props} /> */}
       {experiences.map((experience) => {
         if (experience.city_id === props.match.params.cityId) {

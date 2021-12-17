@@ -17,13 +17,11 @@ const main = async () => {
       city_id: melbourne[0]._id
     },
     {
-      bucketlist_item:
-        'Pet a koala',
+      bucketlist_item: 'Pet a koala',
       city_id: melbourne[0]._id
     },
     {
-      bucketlist_item:
-        'Learn melly slang',
+      bucketlist_item: 'Learn melly slang',
       city_id: melbourne[0]._id
     },
     {
@@ -45,7 +43,7 @@ const main = async () => {
     {
       bucketlist_item: 'Visit the GoMA',
       city_id: brisbane[0]._id
-    }
+    },
     {
       bucketlist_item: 'Go snorkeling',
       city_id: brisbane[0]._id
