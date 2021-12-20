@@ -40,23 +40,27 @@ export default function CityDetails(props) {
     e.preventDefault();
     // console.log(props.match.params.cityId);
     // axios.put(`http://localhost:3001/api/experiences/details/${experienceId}`, {
-    //   bucketlist_item: e.target.value,
+    //   bucketlist_item: ``,
+    //   finished: true,
+    //   review: e.target.value,
     //   city_id: props.match.params.cityId
-    // });
+    // })
+    let addReview = {
+      bucketlist_item: ``,
+      finished: true,
+      review: e.target.value,
+      city_id: props.match.params.cityId
+    };
+    setExperiences(addReview);
   };
 
-  const handleChange = (e, index) => {
+  const handleChange = (e) => {
     e.preventDefault();
     const updatedExperiences = experiences;
     //updateExperience is just a copy
-    updatedExperiences[index].bucketlist_item = e.target.value;
+    updatedExperiences.review = e.target.value;
+    updatedExperiences.finished = true;
     setExperiences(updatedExperiences);
-
-    console.log(updatedExperiences[index].bucketlist_item);
-  };
-
-  const getItem = (index) => {
-    return experiences[index].bucketlist_item;
   };
 
   return selectedCity ? (
@@ -79,7 +83,6 @@ export default function CityDetails(props) {
               onClick={(e) => handleClick(e, experience._id, index)}
               onUpdate={(e) => handleUpdate(e, experience._id, index)}
               onChange={(e) => handleChange(e, index)}
-              getItem={() => getItem(index)}
             />
           );
         } else {

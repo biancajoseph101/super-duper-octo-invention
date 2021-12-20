@@ -3,12 +3,12 @@ import '../styles/ExperienceCard.css';
 
 
 export default function ExperienceCard(props) {
-const { bucketlist_item } = props
 
 const [show, setShow] = useState(false)
 //toggle
 const updateShow = () => {
 setShow(true)
+ 
 }
 
 
@@ -24,20 +24,20 @@ setShow(true)
           className='deleteButton'>x</button>
 
           <button onClick = {updateShow}
-          className='show'>edit</button>
+          className='show'>complete</button>
 
         </li>
         :
         <li className='bucketlist-item'>
+          {props.bucketlist_item}
           <form>
-        <input className='update-form'
-        value=''
+        <input className='review'
+        value={props.review}
         type='text'
-        placeholder={props.getItem()}
         onChange={props.onChange}>
         </input>
         <button onClick = {props.onUpdate}
-        className='show'>update</button>
+        className='visited'>submit review</button>
           </form>
 
       </li>

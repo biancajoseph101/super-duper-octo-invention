@@ -14,39 +14,57 @@ const main = async () => {
     {
       bucketlist_item:
         'Ride the City Circle Tram to Parliament House and Federation Square',
-      city_id: melbourne[0]._id
+      city_id: melbourne[0]._id,
+      finished: false,
+      review: ''
     },
     {
       bucketlist_item: 'Pet a koala',
-      city_id: melbourne[0]._id
+      city_id: melbourne[0]._id,
+      finished: false,
+      review: ''
     },
     {
       bucketlist_item: 'Learn melly slang',
-      city_id: melbourne[0]._id
+      city_id: melbourne[0]._id,
+      finished: false,
+      review: ''
     },
     {
       bucketlist_item: 'Take the Kuranda Scenic Railway',
-      city_id: cairns[0]._id
+      city_id: cairns[0]._id,
+      finished: false,
+      review: ''
     },
     {
       bucketlist_item: 'Try vegemite',
-      city_id: cairns[0]._id
+      city_id: cairns[0]._id,
+      finished: false,
+      review: ''
     },
     {
       bucketlist_item: 'Climb Mt. Wellington',
-      city_id: hobart[0]._id
+      city_id: hobart[0]._id,
+      finished: false,
+      review: ''
     },
     {
       bucketlist_item: 'Visit Jemma',
-      city_id: hobart[0]._id
+      city_id: hobart[0]._id,
+      finished: false,
+      review: ''
     },
     {
       bucketlist_item: 'Visit the GoMA',
-      city_id: brisbane[0]._id
+      city_id: brisbane[0]._id,
+      finished: false,
+      review: ''
     },
     {
       bucketlist_item: 'Go snorkeling',
-      city_id: brisbane[0]._id
+      city_id: brisbane[0]._id,
+      finished: false,
+      review: ''
     }
   ];
 

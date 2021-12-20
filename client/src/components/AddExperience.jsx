@@ -6,7 +6,10 @@ function AddExperience(props) {
 
     const [addExperience, setExperience] = useState({
         bucketlist_item: ``,
+        finished: false,
+        review: ``,
         city_id: props.match.params.cityId
+
     })
 
     // const addItem = () => {
@@ -20,10 +23,14 @@ function AddExperience(props) {
         console.log(addExperience.bucketlist_item)
         axios.post(`http://localhost:3001/api/experiences`, {
             bucketlist_item: addExperience.bucketlist_item,
+            finished: false,
+            review: ``,
             city_id: addExperience.city_id
         })
         let newExperience = {
             bucketlist_item: ``,
+            finished: false,
+            review: ``,
             city_id: props.match.params.cityId
         }
         setExperience(newExperience)
