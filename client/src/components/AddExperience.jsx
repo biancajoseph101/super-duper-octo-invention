@@ -45,17 +45,15 @@ function AddExperience(props) {
 
     return (
         <div className='bucketlist-form'>
-            <h1 className='bucketlist-title'>Add bucketlist item</h1>
-            <form onSubmit={(e) => handleSubmit(e)}>
-                <section className='input'>
-                    New item: <input type='text'
+            <form className='add-form' 
+            onSubmit={(e) => handleSubmit(e)}>
+                    New item: <input className = 'input' type='text'
                     bucketlist_item='bucketlist_item'
                     onChange={(e) => handleChange(e)}
                     value={addExperience.bucketlist_item}
                     
                     id='bucketlist_item'/>
-                </section>
-                <button className='addButton'>Add item</button>
+                <button className='button'>Add item</button>
             </form>
         </div>
 

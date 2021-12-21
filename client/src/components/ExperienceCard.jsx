@@ -51,7 +51,7 @@ const handleChange = (e) => {
         <li className='bucketlist-item'>
           {props.bucketlist_item}
           <form onSubmit= {() => handleUpdate(props.id)}>
-        <input className='review'
+        <input className='input'
         value={props.review}
         type='text'
         onChange={handleChange}>

@@ -1,15 +1,25 @@
 html {
-  background-color: pink;
-  font: green;
+  background-image: url('https://i.imgur.com/gvPDBsG.png');
   display: flex;
   font-family: Andale Mono;
 }
+
 img {
   height: 150px;
   width: 250px;
   padding: 10px;
 }
-
+.input {
+  height: 22px;
+  width: 360px;
+}
+.add-form {
+  padding: 10px;
+  background-color: rgb(6, 37, 41);
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+}
 .city-info {
   display: flex;
   justify-content: center;
@@ -23,6 +33,7 @@ img {
 }
 h1 {
   font-family: Andale Mono;
+  color: white;
 
   text-align: center;
 }
@@ -30,7 +41,9 @@ h1 {
   font-size: xx-large;
   text-align: end;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  background-color: rgba(6, 37, 41, 0.644);
+  padding: 14px;
 }
 a:hover {
   font-weight: bolder;

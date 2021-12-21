@@ -1,10 +1,9 @@
 .bucketlist-item {
-  padding: 20px;
-  background-color: purple;
+  padding: 10px;
+  background-color: rgb(6, 37, 41);
   border-radius: 10px;
   color: white;
-  margin: 10px;
-  padding: 10px;
+  margin-right: 30px;
   list-style-position: inside;
   font-family: Andale Mono;
 }
@@ -12,17 +11,21 @@
 .button {
   padding: 5px;
   margin: 5px;
-  display: flex;
+  align-items: flex-end;
   font-family: Andale Mono;
 }
 
 .exp-item {
-  background-color: powderblue;
+  background-color: rgba(43, 80, 43, 0.89);
   border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
+  margin: 4px;
+  padding: 4px;
 }
 
 .update-form {
   width: 500px;
+}
+
+.add-form {
+  font-family: Andale Mono;
 }
