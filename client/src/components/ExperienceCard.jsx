@@ -16,18 +16,21 @@ setShow(true)
 //   review: props.review,
 //   city_id: props.city_id
 // })
+console.log('this is id', props.id)
 
-const handleUpdate = (e, experienceId) => {
+const handleUpdate = async (e) => {
   e.preventDefault();
-  const updatedExperience = props.experiences[props.index]
-  console.log(updatedExperience)
-  axios.put(`http://localhost:3001/api/experiences/details/${experienceId}`, updatedExperience);
+  const updatedExperience = props.experiences[props.index].review
+  await axios.put(`http://localhost:3001/api/experiences/details/${props.id}`, {review: updatedExperience,
+      finished: true});
+  setShow(false)
 };
 
 const handleChange = (e) => {
   const updatedExperiences = [...props.experiences]
   updatedExperiences[props.index].review = e.target.value
   props.setExperiences(updatedExperiences)
+  console.log(props.experiences[props.index].review)
 
 };
 
@@ -44,13 +47,14 @@ const handleChange = (e) => {
           className='button'>x</button>
 
           <button onClick = {updateShow}
-          className='button'>complete</button>
+          className='button'>review</button>
 
         </li>
         :
         <li className='bucketlist-item'>
-          {props.bucketlist_item}
-          <form onSubmit= {() => handleUpdate(props.id)}>
+          <h3>{props.bucketlist_item}</h3>
+          <h5>Review: {props.review}</h5>
+          <form onSubmit= {handleUpdate}>
         <input className='input'
         value={props.review}
         type='text'

@@ -1,6 +1,5 @@
 html {
   background-image: url('https://i.imgur.com/gvPDBsG.png');
-  display: flex;
   font-family: Andale Mono;
 }
 
@@ -23,8 +22,12 @@ img {
 .city-info {
   display: flex;
   justify-content: center;
-  align-items: center;
+  position: relative;
   font-family: Andale Mono;
+}
+
+.city-info:hover {
+  background-color: rgba(51, 92, 51, 0.877);
 }
 .grid {
   display: grid;
