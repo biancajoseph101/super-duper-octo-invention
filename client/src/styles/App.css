@@ -1,11 +1,12 @@
 html {
   background-image: url('https://i.imgur.com/gvPDBsG.png');
   font-family: Andale Mono;
+  text-transform: uppercase;
 }
 
 img {
-  height: 150px;
-  width: 250px;
+  height: 170px;
+  width: 280px;
   padding: 10px;
 }
 .input {
@@ -20,14 +21,15 @@ img {
   color: white;
 }
 .city-info {
-  display: flex;
-  justify-content: center;
   position: relative;
-  font-family: Andale Mono;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .city-info:hover {
-  background-color: rgba(51, 92, 51, 0.877);
+  background-color: rgba(27, 34, 27, 0.877);
+  cursor: pointer;
 }
 .grid {
   display: grid;
@@ -36,13 +38,22 @@ img {
 }
 h1 {
   font-family: Andale Mono;
-  color: white;
+  color: rgba(255, 255, 255, 0.767);
+  display: flex;
+  justify-content: center;
+  text-shadow: 3px ghostwhite;
+  font-size: 55px;
+}
 
-  text-align: center;
+h2 {
+  font-family: Andale Mono;
+  font-size: 42px;
+  color: rgba(255, 255, 255, 0.658);
+  position: absolute;
 }
 .navbar {
-  font-size: xx-large;
   text-align: end;
+  font-size: 20px;
   display: flex;
   justify-content: end;
   background-color: rgba(6, 37, 41, 0.644);

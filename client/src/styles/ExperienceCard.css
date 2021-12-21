@@ -13,6 +13,7 @@
   margin: 5px;
   align-items: flex-end;
   font-family: Andale Mono;
+  text-transform: uppercase;
 }
 
 .button:hover {
