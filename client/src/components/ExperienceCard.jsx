@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/ExperienceCard.css';
+import axios from 'axios';
 
 
 export default function ExperienceCard(props) {
@@ -8,9 +9,30 @@ const [show, setShow] = useState(false)
 //toggle
 const updateShow = () => {
 setShow(true)
- 
 }
+const [updatedExperience, setUpdatedExperience] = useState({
+  review: ``
+})
 
+// useEffect(() => {
+//   getCity();
+//   getExperiences();
+// }, []);
+
+const handleUpdate = (e, experienceId) => {
+  console.log(updatedExperience);
+  e.preventDefault();
+  setUpdatedExperience({ finished: true });
+  axios.put(`http://localhost:3001/api/experiences/details/${experienceId}`, {
+    updatedExperience
+  });
+  setUpdatedExperience({});
+};
+
+const handleChange = (e) => {
+  e.preventDefault();
+  setUpdatedExperience({ review: e.target.value });
+};
 
 
   return (
@@ -34,7 +56,12 @@ setShow(true)
         <input className='review'
         value={props.review}
         type='text'
-        onChange={props.onChange}>
+        name='review'
+        onChange={props.onChange}
+        review={updatedExperience.review}
+        onUpdate={(e) => handleUpdate(e, props._id)}
+        onChange={(e) => handleChange(e)}
+          >
         </input>
         <button onClick = {props.onUpdate}
         className='visited'>submit review</button>

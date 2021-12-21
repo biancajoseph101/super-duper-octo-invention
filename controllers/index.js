@@ -75,23 +75,19 @@ const getExperienceById = async (req, res) => {
 
 const updateExperience = async (req, res) => {
   try {
-    const { id } = req.params;
-    await Experience.findByIdAndUpdate(
-      id,
-      req.body,
-      { new: true },
-      (err, experience) => {
-        if (err) {
-          res.status(500).send(err);
-        }
-        if (!experience) {
-          res.status(500).send('Experience not found!');
-        }
-        return res.status(200).json(experience);
+    const { _id } = req.params;
+    await Experience.findByIdAndUpdate(_id, req.body, (err, experience) => {
+      if (err) {
+        res.status(500).send(err);
       }
-    );
+      if (!experience) {
+        res.status(500).send('Experience not found!');
+      }
+      return res.status(200).json(experience);
+    });
   } catch (error) {
-    return res.status(500).send(error.message);
+    console.log(error.message);
+    return res.status(500);
   }
 };
 

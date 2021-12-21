@@ -6,7 +6,6 @@ import AddExperience from '../components/AddExperience';
 export default function CityDetails(props) {
   const [selectedCity, setSelectedCity] = useState(null);
   const [experiences, setExperiences] = useState([]);
-
   const getCity = async () => {
     const res = await axios.get(
       `http://localhost:3001/api/cities/details/${props.match.params.cityId}`
@@ -36,33 +35,6 @@ export default function CityDetails(props) {
     getExperiences();
   };
 
-  const handleUpdate = (e, experienceId, index) => {
-    e.preventDefault();
-    // console.log(props.match.params.cityId);
-    // axios.put(`http://localhost:3001/api/experiences/details/${experienceId}`, {
-    //   bucketlist_item: ``,
-    //   finished: true,
-    //   review: e.target.value,
-    //   city_id: props.match.params.cityId
-    // })
-    let addReview = {
-      bucketlist_item: ``,
-      finished: true,
-      review: e.target.value,
-      city_id: props.match.params.cityId
-    };
-    setExperiences(addReview);
-  };
-
-  const handleChange = (e) => {
-    e.preventDefault();
-    const updatedExperiences = experiences;
-    //updateExperience is just a copy
-    updatedExperiences.review = e.target.value;
-    updatedExperiences.finished = true;
-    setExperiences(updatedExperiences);
-  };
-
   return selectedCity ? (
     <div>
       <section className="city-info">
@@ -81,8 +53,6 @@ export default function CityDetails(props) {
               index={index}
               bucketlist_item={experience.bucketlist_item}
               onClick={(e) => handleClick(e, experience._id, index)}
-              onUpdate={(e) => handleUpdate(e, experience._id, index)}
-              onChange={(e) => handleChange(e, index)}
             />
           );
         } else {
