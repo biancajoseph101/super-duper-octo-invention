@@ -48,8 +48,8 @@ export default function CityDetails(props) {
         if (experience.city_id === props.match.params.cityId) {
           return (
             <ExperienceCard
-              {...props}
               key={experience._id}
+              id={experience._id}
               index={index}
               bucketlist_item={experience.bucketlist_item}
               onClick={(e) => handleClick(e, experience._id, index)}

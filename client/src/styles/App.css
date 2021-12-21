@@ -15,10 +15,15 @@ img {
   align-items: center;
 }
 
-.h1 {
-  justify-content: center;
+h1 {
+  text-align: center;
 }
 .navbar {
+  font-size: xx-large;
+  text-align: end;
   display: flex;
   justify-content: space-between;
+}
+a:hover {
+  font-weight: bolder;
 }

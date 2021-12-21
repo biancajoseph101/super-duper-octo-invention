@@ -20,8 +20,7 @@ const [updatedExperience, setUpdatedExperience] = useState({
 // }, []);
 
 const handleUpdate = (e, experienceId) => {
-  console.log(updatedExperience);
-  e.preventDefault();
+  // e.preventDefault();
   setUpdatedExperience({ finished: true });
   axios.put(`http://localhost:3001/api/experiences/details/${experienceId}`, {
     updatedExperience
@@ -57,13 +56,12 @@ const handleChange = (e) => {
         value={props.review}
         type='text'
         name='review'
-        onChange={props.onChange}
         review={updatedExperience.review}
-        onUpdate={(e) => handleUpdate(e, props._id)}
-        onChange={(e) => handleChange(e)}
+        onChange={handleChange}
           >
         </input>
-        <button onClick = {props.onUpdate}
+        <button onClick = {()=> {handleUpdate(props.id)}}
+
         className='visited'>submit review</button>
           </form>
 

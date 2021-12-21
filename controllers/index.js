@@ -10,7 +10,8 @@ const createCity = async (req, res) => {
       city
     });
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    console.log(error.message);
+    return res.status(500);
   }
 };
 
@@ -23,7 +24,8 @@ const createExperience = async (req, res) => {
       experience
     });
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    console.log(error.message);
+    return res.status(500);
   }
 };
 
@@ -32,7 +34,8 @@ const getAllCities = async (req, res) => {
     const cities = await City.find();
     return res.status(200).json({ cities });
   } catch (error) {
-    return res.status(500).send(error.message);
+    console.log(error.message);
+    return res.status(500);
   }
 };
 
@@ -41,7 +44,8 @@ const getAllExperiences = async (req, res) => {
     const experiences = await Experience.find();
     return res.status(200).json({ experiences });
   } catch (error) {
-    return res.status(500).send(error.message);
+    console.log(error.message);
+    return res.status(500);
   }
 };
 
@@ -54,7 +58,8 @@ const getCityById = async (req, res) => {
     }
     return res.status(404).send(`City with the specified ID does not exists`);
   } catch (error) {
-    return res.status(500).send(error.message);
+    console.log(error.message);
+    return res.status(500);
   }
 };
 
@@ -69,7 +74,8 @@ const getExperienceById = async (req, res) => {
       .status(404)
       .send(`Experience with the specified ID does not exists`);
   } catch (error) {
-    return res.status(500).send(error.message);
+    console.log(error.message);
+    return res.status(500);
   }
 };
 
@@ -104,7 +110,8 @@ const updateCity = async (req, res) => {
       return res.status(200).json(city);
     });
   } catch (error) {
-    return res.status(500).send(error.message);
+    console.log(error.message);
+    return res.status(500);
   }
 };
 
@@ -117,7 +124,8 @@ const deleteCity = async (req, res) => {
     }
     throw new Error('City not found');
   } catch (error) {
-    return res.status(500).send(error.message);
+    console.log(error.message);
+    return res.status(500);
   }
 };
 
@@ -130,7 +138,8 @@ const deleteExperience = async (req, res) => {
     }
     throw new Error('Experience not found');
   } catch (error) {
-    return res.status(500).send(error.message);
+    console.log(error.message);
+    return res.status(500);
   }
 };
 
