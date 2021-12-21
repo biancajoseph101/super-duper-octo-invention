@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Home from './pages/Home';
 import CityDetails from './pages/CityDetails';
 import Map from './pages/Map';
+import About from './pages/About';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           render={(props) => <CityDetails {...props} />}
         />
         <Route exact path="/map" component={Map} />
+        <Route exact path="/about" component={About} />
       </Switch>
     </div>
   );

@@ -2,6 +2,7 @@ html {
   background-image: url('https://i.imgur.com/gvPDBsG.png');
   font-family: Andale Mono;
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.658);
 }
 
 img {
@@ -42,7 +43,7 @@ h1 {
   display: flex;
   justify-content: center;
   text-shadow: 3px ghostwhite;
-  font-size: 55px;
+  font-size: 50px;
 }
 
 h2 {
@@ -61,4 +62,15 @@ h2 {
 }
 a:hover {
   font-weight: bolder;
+}
+
+.about {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Andale Mono;
+}
+
+.resources-list {
+  background-color: darkgray;
+  border-radius: 8px;
 }

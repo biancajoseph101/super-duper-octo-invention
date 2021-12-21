@@ -16,7 +16,6 @@ setShow(true)
 //   review: props.review,
 //   city_id: props.city_id
 // })
-console.log('this is id', props.id)
 
 const handleUpdate = async (e) => {
   e.preventDefault();
@@ -30,29 +29,28 @@ const handleChange = (e) => {
   const updatedExperiences = [...props.experiences]
   updatedExperiences[props.index].review = e.target.value
   props.setExperiences(updatedExperiences)
-  console.log(props.experiences[props.index].review)
 
 };
 
 
   return (
     <div className='exp-card'>
-      <section className='exp-item'>
+      <div className='exp-item'>
+    <button onClick = {props.onClick}
+          className='xbutton'>x</button>
        <ul>
          {!show ? 
         <li className='bucketlist-item'>
           {props.bucketlist_item}
 
-          <button onClick = {props.onClick}
-          className='button'>x</button>
-
           <button onClick = {updateShow}
           className='button'>review</button>
-
+ 
         </li>
         :
         <li className='bucketlist-item'>
           <h3>{props.bucketlist_item}</h3>
+          
           <h5>Review: {props.review}</h5>
           <form onSubmit= {handleUpdate}>
         <input className='input'
@@ -62,10 +60,11 @@ const handleChange = (e) => {
         </input>
         <button className='button'>submit review</button>
           </form>
+         
       </li>
          }
         </ul>
-      </section>
+      </div>
     </div>
   )
 }
