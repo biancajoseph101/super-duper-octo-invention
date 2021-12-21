@@ -9,7 +9,6 @@ function AddExperience(props) {
         finished: false,
         review: ``,
         city_id: props.match.params.cityId
-
     })
 
     // const addItem = () => {

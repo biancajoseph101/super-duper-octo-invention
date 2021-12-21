@@ -50,8 +50,13 @@ export default function CityDetails(props) {
             <ExperienceCard
               key={experience._id}
               id={experience._id}
+              setExperiences={setExperiences}
+              experiences={experiences}
               index={index}
               bucketlist_item={experience.bucketlist_item}
+              finished={experience.finished}
+              review={experience.review}
+              city_id={experience.city_id}
               onClick={(e) => handleClick(e, experience._id, index)}
             />
           );

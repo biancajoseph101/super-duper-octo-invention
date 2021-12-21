@@ -18,7 +18,7 @@ router.get('/experiences/details/:_id', controllers.getExperienceById);
 
 router.put('/cities/details/:_id', controllers.updateCity);
 
-router.put('/experiences/details/:_id', controllers.updateExperience);
+router.put('/experiences/details/:id', controllers.updateExperience);
 
 router.delete('/cities/details/:_id', controllers.deleteCity);
 

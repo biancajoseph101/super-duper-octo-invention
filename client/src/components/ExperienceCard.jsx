@@ -10,27 +10,25 @@ const [show, setShow] = useState(false)
 const updateShow = () => {
 setShow(true)
 }
-const [updatedExperience, setUpdatedExperience] = useState({
-  review: ``
-})
-
-// useEffect(() => {
-//   getCity();
-//   getExperiences();
-// }, []);
+// const [updatedExperience, setUpdatedExperience] = useState({
+//   bucketlist_item: props.bucketlist_item,
+//   finished: props.finished,
+//   review: props.review,
+//   city_id: props.city_id
+// })
 
 const handleUpdate = (e, experienceId) => {
-  // e.preventDefault();
-  setUpdatedExperience({ finished: true });
-  axios.put(`http://localhost:3001/api/experiences/details/${experienceId}`, {
-    updatedExperience
-  });
-  setUpdatedExperience({});
+  e.preventDefault();
+  const updatedExperience = props.experiences[props.index]
+  console.log(updatedExperience)
+  axios.put(`http://localhost:3001/api/experiences/details/${experienceId}`, updatedExperience);
 };
 
 const handleChange = (e) => {
-  e.preventDefault();
-  setUpdatedExperience({ review: e.target.value });
+  const updatedExperiences = [...props.experiences]
+  updatedExperiences[props.index].review = e.target.value
+  props.setExperiences(updatedExperiences)
+
 };
 
 
@@ -41,32 +39,26 @@ const handleChange = (e) => {
          {!show ? 
         <li className='bucketlist-item'>
           {props.bucketlist_item}
+
           <button onClick = {props.onClick}
-          className='deleteButton'>x</button>
+          className='button'>x</button>
 
           <button onClick = {updateShow}
-          className='show'>complete</button>
+          className='button'>complete</button>
 
         </li>
         :
         <li className='bucketlist-item'>
           {props.bucketlist_item}
-          <form>
+          <form onSubmit= {() => handleUpdate(props.id)}>
         <input className='review'
         value={props.review}
         type='text'
-        name='review'
-        review={updatedExperience.review}
-        onChange={handleChange}
-          >
+        onChange={handleChange}>
         </input>
-        <button onClick = {()=> {handleUpdate(props.id)}}
-
-        className='visited'>submit review</button>
+        <button className='button'>submit review</button>
           </form>
-
       </li>
-
          }
         </ul>
       </section>

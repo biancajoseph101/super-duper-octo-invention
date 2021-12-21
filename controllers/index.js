@@ -82,15 +82,21 @@ const getExperienceById = async (req, res) => {
 const updateExperience = async (req, res) => {
   try {
     const { _id } = req.params;
-    await Experience.findByIdAndUpdate(_id, req.body, (err, experience) => {
-      if (err) {
-        res.status(500).send(err);
+    console.log(req);
+    await Experience.findByIdAndUpdate(
+      _id,
+      req.body,
+      { new: true },
+      (err, experience) => {
+        if (err) {
+          res.status(500).send(err);
+        }
+        if (!experience) {
+          res.status(500).send('Experience not found!');
+        }
+        return res.status(200).json(experience);
       }
-      if (!experience) {
-        res.status(500).send('Experience not found!');
-      }
-      return res.status(200).json(experience);
-    });
+    );
   } catch (error) {
     console.log(error.message);
     return res.status(500);
@@ -99,8 +105,8 @@ const updateExperience = async (req, res) => {
 
 const updateCity = async (req, res) => {
   try {
-    const { id } = req.params;
-    await City.findByIdAndUpdate(id, req.body, { new: true }, (err, city) => {
+    const { _id } = req.params;
+    await City.findByIdAndUpdate(_id, req.body, { new: true }, (err, city) => {
       if (err) {
         res.status(500).send(err);
       }

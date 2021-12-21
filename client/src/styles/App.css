@@ -2,10 +2,11 @@ html {
   background-color: pink;
   font: green;
   display: flex;
+  font-family: Andale Mono;
 }
 img {
-  height: 300px;
-  width: 400px;
+  height: 150px;
+  width: 250px;
   padding: 10px;
 }
 
@@ -13,9 +14,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Andale Mono;
 }
 
 h1 {
+  font-family: Andale Mono;
+
   text-align: center;
 }
 .navbar {
