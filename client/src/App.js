@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import CityDetails from './pages/CityDetails';
 import Map from './pages/Map';
 import About from './pages/About';
+import Tips from './pages/Tips';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         />
         <Route exact path="/map" component={Map} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/tips" component={Tips} />
       </Switch>
     </div>
   );
