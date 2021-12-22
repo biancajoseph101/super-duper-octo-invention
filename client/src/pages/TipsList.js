@@ -13,7 +13,7 @@ const TipsList = () => {
   ]);
 
   const addTip = () => {
-    let myNewList = [...tips, 'new tip'];
+    let myNewList = [...tips];
     manageTips(myNewList);
     console.log(tips);
   };
@@ -24,7 +24,10 @@ const TipsList = () => {
     manageTips(tipList);
   };
 
-  const handleChange = () => {};
+  const handleChange = (e) => {
+    const newTip = e.target.value;
+    manageTips(newTip);
+  };
 
   return (
     <div className="travel-tips">
