@@ -46,20 +46,17 @@ const About = () => {
           <h3>Personal Links:</h3>
           <div className="links">
             <h4>
-              <a href="https://bigaustraliabucketlist.com/free-things-to-do-in-melbourne/">
+              <a href="https://www.linkedin.com/in/biancaclairejoseph/">
                 LinkedIn
               </a>
             </h4>
             <h4>
-              <a href="https://www.bookmundi.com/t/12-best-cities-to-visit-in-australia">
-                GitHub
+              <a href="https://www.github.com/biancajoseph101">GitHub</a>
+            </h4>
+            <h4>
+              <a href="https://trello.com/b/C7qTCp66/australia-bucket-list">
+                Trello
               </a>
-            </h4>
-            <h4>
-              <a href="https://www.unsplash.com">Trello</a>
-            </h4>
-            <h4>
-              <a href="https://www.duckduckgo.com">Images</a>
             </h4>
           </div>
         </div>
