@@ -107,14 +107,13 @@ a:hover {
   align-items: center;
 }
 
-.xButton {
-  display: grid;
-  justify-self: right;
+.xTipButton {
+  float: right;
 }
 
 li {
   list-style: none;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   padding-right: 10px;
 }
 

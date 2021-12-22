@@ -58,7 +58,7 @@ const handleChange = (e) => {
         type='text'
         onChange={handleChange}>
         </input>
-        <button className='button'>submit review</button>
+        <button onClick = {updateShow} className='button'>submit review</button>
           </form>
          
       </li>
