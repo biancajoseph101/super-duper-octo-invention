@@ -28,7 +28,7 @@ export default function CityDetails(props) {
     axios.delete(
       `http://localhost:3001/api/experiences/details/${experienceId}`
     );
-    // window.location.reload();
+    window.location.reload();
     // let array = experiences;
     // array.splice(index, 1);
     // setExperiences(array);

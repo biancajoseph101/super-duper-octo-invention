@@ -6,8 +6,8 @@ html {
 }
 
 img {
-  height: 170px;
-  width: 280px;
+  height: 160px;
+  width: 270px;
   padding: 10px;
 }
 .input {
@@ -29,13 +29,14 @@ img {
 }
 
 .city-info:hover {
-  background-color: rgba(27, 34, 27, 0.877);
+  background-color: rgb(6, 37, 41);
   cursor: pointer;
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  padding: 20px;
 }
 h1 {
   font-family: Andale Mono;
@@ -57,7 +58,7 @@ h2 {
   font-size: 20px;
   display: flex;
   justify-content: end;
-  background-color: rgba(6, 37, 41, 0.644);
+  background-color: rgba(6, 37, 41, 0.836);
   padding: 14px;
 }
 a:hover {

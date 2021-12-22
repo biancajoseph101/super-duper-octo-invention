@@ -49,7 +49,7 @@ const handleChange = (e) => {
         </li>
         :
         <li className='bucketlist-item'>
-          <h3>{props.bucketlist_item}</h3>
+          <strike>{props.bucketlist_item}</strike>
           
           <h5>Review: {props.review}</h5>
           <form onSubmit= {handleUpdate}>

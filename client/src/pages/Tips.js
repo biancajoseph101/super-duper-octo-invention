@@ -6,7 +6,7 @@ const Tips = () => {
       <h1>Travel Tips</h1>
       <div className="tips-list">
         <ul>
-          best bug spray brand <br /> stay in a hostel
+          » best bug spray brand <br /> » stay in a hostel
         </ul>
       </div>
     </div>

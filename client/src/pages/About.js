@@ -25,8 +25,8 @@ const About = () => {
       <div className="resources-list">
         <h3>Resources</h3>
         <ul>
-          https://www.bookmundi.com/t/12-best-cities-to-visit-in-australia
-          https://www.unsplash.com
+          » https://www.bookmundi.com/t/12-best-cities-to-visit-in-australia{' '}
+          <br />» https://www.unsplash.com
         </ul>
       </div>
     </div>
