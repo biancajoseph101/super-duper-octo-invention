@@ -13,7 +13,7 @@ const TipsList = () => {
   ]);
 
   const addTip = () => {
-    let myNewList = [...tips, { addTip }];
+    let myNewList = [...tips];
     manageTips(myNewList);
     console.log(tips);
   };

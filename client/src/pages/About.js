@@ -5,22 +5,22 @@ const About = () => {
     <div className="about">
       <h1>About</h1>
       <p>
-        This is information about me and my website. Hello, my name is Bianca
-        Joseph. I applied for an Australian work and holiday visa in April 2020
-        around when the pandemic started. Due to the unfortunate timing of my
-        visa request, the Australian Government Department of Home Affairs took
-        longer to process and approve visas due to the travel bans and lockdown
-        restrictions. I didn't hear from them for months and figured that my
-        application never went through or wasn't approved. Fast forward to
-        December 2022, after I had completely forgotten about this visa I had
-        applied to, I receive an email saying that my application was granted.
-        This truly caught me by surprise as I entered the 5th week of my online
-        Software Engineering Immersive course with General Assembly. Our second
-        big project for class was coming up, for our project we were to create a
-        full stack app of our choice. I decided to kill two birds with one
-        stone, and create my project based on Australian cities, atractions and
-        travel tips. It has been a fun experience creating this website and
-        learning about Australia simultaneously. I hope I can make it out there!
+        This is the story behind why I created this app. I applied for an
+        Australian work and holiday visa in April 2020 around when the pandemic
+        started. Due to the unfortunate timing of my visa request, the
+        Australian Government Department of Home Affairs took longer to process
+        and approve visas due to the travel bans and lockdown restrictions. I
+        didn't hear from them for months and figured that my application never
+        went through or wasn't approved. Fast forward to December 2022, after I
+        had completely forgotten about this visa I had applied to, I receive an
+        email saying that my application was granted. This truly caught me by
+        surprise as I entered the 5th week of my online Software Engineering
+        Immersive course with General Assembly. Our second big project for class
+        was coming up, for our project we were to create a full stack app of our
+        choice. I decided to kill two birds with one stone, and create my
+        project based on Australian cities, atractions and travel tips. It has
+        been a fun experience creating this website and learning about Australia
+        simultaneously. I hope I can make it out there!
       </p>
       <div className="my-stuff">
         <h3>Personal Links:</h3>
