@@ -89,3 +89,10 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

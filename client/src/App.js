@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import CityDetails from './pages/CityDetails';
 import Map from './pages/Map';
 import About from './pages/About';
-import Tips from './pages/Tips';
+import Tips from './pages/TipsList';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         />
         <Route exact path="/map" component={Map} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/tips" component={Tips} />
+        <Route exact path="/tipslist" component={Tips} />
       </Switch>
     </div>
   );
