@@ -52,13 +52,13 @@ const handleChange = (e) => {
           <strike>{props.bucketlist_item}</strike>
           
           <h5>Review: {props.review}</h5>
-          <form onSubmit= {handleUpdate}>
+          <form  onClick = {updateShow} onSubmit= {handleUpdate}>
         <input className='input'
         value={props.review}
         type='text'
         onChange={handleChange}>
         </input>
-        <button onClick = {updateShow} className='button'>submit review</button>
+        <button className='button'>submit review</button>
           </form>
          
       </li>

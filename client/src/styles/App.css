@@ -72,11 +72,17 @@ a:hover {
   margin: 120px;
 }
 
+p {
+  background-color: rgba(6, 37, 41, 0.918);
+  border-radius: 8px;
+  padding: 20px;
+}
+
 .resources-list {
   background-color: rgba(169, 169, 169, 0.671);
   border-radius: 8px;
   padding: 2px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .links {
