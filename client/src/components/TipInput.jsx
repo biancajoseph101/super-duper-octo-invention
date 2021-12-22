@@ -8,7 +8,7 @@ const TipInput = (props) => {
     <div className='tips'>
       <label>Add Tip: </label>
       <input type="text" className="input" />
-      <button className= 'button' onClick={props.addTip}>Add Tip</button>
+      <button className= 'button' onClick={props.addTip}>+</button>
     </div>
   )
 }

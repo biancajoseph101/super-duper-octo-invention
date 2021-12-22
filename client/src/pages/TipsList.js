@@ -9,11 +9,11 @@ const TipsList = () => {
     'Be wary of money changing scams at restaurants, attractions and more',
     'Chips means fries',
     'Tipping is not a necessity as the minimum wage is a lot higher',
-    'Chips means fries'
+    'A flight from East Coast (Brisbane) to the West Coast (Perth) takes 5.5 hours'
   ]);
 
   const addTip = () => {
-    let myNewList = [...tips];
+    let myNewList = [...tips, { addTip }];
     manageTips(myNewList);
     console.log(tips);
   };
