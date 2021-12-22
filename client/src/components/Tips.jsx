@@ -7,7 +7,7 @@ const Tips = (props) => {
       {props.tips.map((tip, index) => (
         <li key={index}>
           {tip} 
-          <button onClick ={() => props.removeTip(index)}>
+          <button className='xButton' onClick ={() => props.removeTip(index)}>
             x
           </button>
         </li>

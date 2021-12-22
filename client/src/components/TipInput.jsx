@@ -7,8 +7,8 @@ const TipInput = (props) => {
   return (
     <div className='tips'>
       <label>Add Tip: </label>
-      <input type="text" name="tip" />
-      <button onClick={props.addTip}>Add Tip</button>
+      <input type="text" className="input" />
+      <button className= 'button' onClick={props.addTip}>Add Tip</button>
     </div>
   )
 }
