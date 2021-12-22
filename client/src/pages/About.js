@@ -23,11 +23,46 @@ const About = () => {
         learning about Australia simultaneously. I hope I can make it out there!
       </p>
       <div className="resources-list">
-        <h3>Resources</h3>
-        <ul>
-          » https://www.bookmundi.com/t/12-best-cities-to-visit-in-australia{' '}
-          <br />» https://www.unsplash.com
-        </ul>
+        <h3>Resources:</h3>
+        <div className="links">
+          <h4>
+            <a href="https://bigaustraliabucketlist.com/free-things-to-do-in-melbourne/">
+              Descriptions
+            </a>
+          </h4>
+          <h4>
+            <a href="https://www.bookmundi.com/t/12-best-cities-to-visit-in-australia">
+              Attractions
+            </a>
+          </h4>
+          <h4>
+            <a href="https://www.unsplash.com">Images</a>
+          </h4>
+          <h4>
+            <a href="https://www.duckduckgo.com">Images</a>
+          </h4>
+        </div>
+        <div className="my-stuff">
+          <h3>Personal Links:</h3>
+          <div className="links">
+            <h4>
+              <a href="https://bigaustraliabucketlist.com/free-things-to-do-in-melbourne/">
+                LinkedIn
+              </a>
+            </h4>
+            <h4>
+              <a href="https://www.bookmundi.com/t/12-best-cities-to-visit-in-australia">
+                GitHub
+              </a>
+            </h4>
+            <h4>
+              <a href="https://www.unsplash.com">Trello</a>
+            </h4>
+            <h4>
+              <a href="https://www.duckduckgo.com">Images</a>
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
   );
