@@ -6,16 +6,9 @@ import axios from 'axios';
 export default function ExperienceCard(props) {
 
 const [show, setShow] = useState(false)
-//toggle
 const updateShow = () => {
 setShow(true)
 }
-// const [updatedExperience, setUpdatedExperience] = useState({
-//   bucketlist_item: props.bucketlist_item,
-//   finished: props.finished,
-//   review: props.review,
-//   city_id: props.city_id
-// })
 
 const handleUpdate = async (e) => {
   e.preventDefault();
@@ -29,9 +22,7 @@ const handleChange = (e) => {
   const updatedExperiences = [...props.experiences]
   updatedExperiences[props.index].review = e.target.value
   props.setExperiences(updatedExperiences)
-
 };
-
 
   return (
     <div className='exp-card'>

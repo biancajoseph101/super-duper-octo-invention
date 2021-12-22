@@ -23,16 +23,12 @@ export default function CityDetails(props) {
     getExperiences();
   }, []);
 
-  const handleClick = (e, experienceId, index) => {
+  const handleClick = (e, experienceId) => {
     e.preventDefault();
     axios.delete(
       `http://localhost:3001/api/experiences/details/${experienceId}`
     );
     window.location.reload();
-    // let array = experiences;
-    // array.splice(index, 1);
-    // setExperiences(array);
-    // getExperiences();
   };
 
   return selectedCity ? (
@@ -61,7 +57,6 @@ export default function CityDetails(props) {
             />
           );
         } else {
-          console.log('experience doesnt match this city');
         }
       })}
     </div>

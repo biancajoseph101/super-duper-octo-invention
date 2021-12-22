@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 
 function AddExperience(props) {
-    // const [experiences, manageExperiences] = useState([])
 
     const [addExperience, setExperience] = useState({
         bucketlist_item: ``,
@@ -10,12 +9,6 @@ function AddExperience(props) {
         review: ``,
         city_id: props.match.params.cityId
     })
-
-    // const addItem = () => {
-    //     let newList = [...experiences, 'new experience']
-    //     manageExperiences(newList)
-    //     console.log(experiences)
-    // }
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -40,7 +33,6 @@ function AddExperience(props) {
         const postedExperience = { ...addExperience }
         postedExperience[e.target.id] = e.target.value
         setExperience(postedExperience)
-        // console.log(addExperience)
     }
 
     return (

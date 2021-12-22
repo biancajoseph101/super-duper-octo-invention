@@ -29,7 +29,7 @@ img {
 }
 
 .city-info:hover {
-  background-color: rgb(6, 37, 41);
+  background-color: rgba(67, 104, 64, 0.747);
   cursor: pointer;
 }
 .grid {
@@ -113,17 +113,41 @@ p {
   font-family: Andale Mono;
   font-size: 18px;
   display: flex;
-  justify-content: center;
-}
-.tips-list {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.tips {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .xTipButton {
   float: right;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: double;
+}
+.tipbutton {
+  background-color: rgb(16, 56, 41);
+  color: white;
+  padding: 5px;
+  margin: 3px;
+  text-transform: uppercase;
+  margin-left: 7px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: double;
+  border-color: rgba(247, 240, 240, 0.616);
+}
+
+.tipbutton:hover {
+  background-color: rgb(16, 233, 150);
+}
+
+.xTipButton:hover {
+  background-color: rgba(189, 0, 0, 0.774);
 }
 
 li {
