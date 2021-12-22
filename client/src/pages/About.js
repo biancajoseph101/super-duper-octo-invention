@@ -22,43 +22,47 @@ const About = () => {
         travel tips. It has been a fun experience creating this website and
         learning about Australia simultaneously. I hope I can make it out there!
       </p>
+      <div className="my-stuff">
+        <h3>Personal Links:</h3>
+        <div className="links">
+          <h4>
+            »
+            <a href="https://www.linkedin.com/in/biancaclairejoseph/">
+              LinkedIn
+            </a>
+          </h4>
+          <h4>
+            »<a href="https://www.github.com/biancajoseph101">GitHub</a>
+          </h4>
+          <h4>
+            »
+            <a href="https://trello.com/b/C7qTCp66/australia-bucket-list">
+              Trello
+            </a>
+          </h4>
+        </div>
+      </div>
       <div className="resources-list">
         <h3>Resources:</h3>
         <div className="links">
           <h4>
+            »
             <a href="https://bigaustraliabucketlist.com/free-things-to-do-in-melbourne/">
               Descriptions
             </a>
           </h4>
           <h4>
+            »
             <a href="https://www.bookmundi.com/t/12-best-cities-to-visit-in-australia">
               Attractions
             </a>
           </h4>
           <h4>
-            <a href="https://www.unsplash.com">Images</a>
+            »<a href="https://www.unsplash.com">Images</a>
           </h4>
           <h4>
-            <a href="https://www.duckduckgo.com">Images</a>
+            »<a href="https://www.duckduckgo.com">Images</a>
           </h4>
-        </div>
-        <div className="my-stuff">
-          <h3>Personal Links:</h3>
-          <div className="links">
-            <h4>
-              <a href="https://www.linkedin.com/in/biancaclairejoseph/">
-                LinkedIn
-              </a>
-            </h4>
-            <h4>
-              <a href="https://www.github.com/biancajoseph101">GitHub</a>
-            </h4>
-            <h4>
-              <a href="https://trello.com/b/C7qTCp66/australia-bucket-list">
-                Trello
-              </a>
-            </h4>
-          </div>
         </div>
       </div>
     </div>
