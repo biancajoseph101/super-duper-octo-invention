@@ -4,13 +4,13 @@
 
 ### **By: Bianca Joseph**
 
-[Trello](https://trello.com/b/C7qTCp66/australia-bucket-list) | [GitHub](https://github.com/biancajoseph101) | [Website] ()
+[Trello](https://trello.com/b/C7qTCp66/australia-bucket-list) | [GitHub](https://github.com/biancajoseph101) | [LinkedIn](www.linkedin.com/biancaclairejoseph)
 
 ---
 
 ### **_Description_**
 
-A website created in preparation for moving to Australia. A detailed description of different cities with different things to do. Including a personal 'bucket list' of experiences that I would like to experience in each city, with a possible future update on cities I have been to and how it was(reviews and travel tips).
+A website created in hopes of moving to or visiting Australia. A detailed description of different cities with different things to do, including a personal 'bucket list' of experiences that I would like to experience in each city. Other people who are interested in learning more or traveling to Australia can visit my page and find ideas, reviews and travel tips. Possible future updates include expanding to more countries and adding a log in feature for other users to create their own bucket lists.
 
 ---
 
@@ -36,7 +36,7 @@ A website created in preparation for moving to Australia. A detailed description
 
   - _CityCard, CityDetailsCard, SubmitBucketList, Nav_
 
-- _Pages and routes: Home(city cards), About, CityDetails, _
+- _Pages and routes: Home(city cards), About, CityDetails_
 - _CSS: grid or flexbox_
 
 ---
@@ -53,15 +53,20 @@ A website created in preparation for moving to Australia. A detailed description
 
 ### **_Future Updates_**
 
-- [ ] Check list
+- [ ] Search bar
+- [ ] More users/login feature
+- [ ] Blog page
+- [ ] Mobile friendly
 - [ ] More destinations
-- [x] ~~Added more levels~~
+- [x] ~~Added Tips page~~
 
 ---
 
 ### **_Credits_**
 
 Images: [DuckDuckGo](www.duckduckgo.com)
+
+Images: [Unsplash](www.unsplash.com)
 
 Markdown Guide: ia.net
 
