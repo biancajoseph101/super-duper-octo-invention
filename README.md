@@ -24,12 +24,15 @@ A website created in hopes of moving to or visiting Australia. A detailed descri
 - **Express**
 - **Mongoose**
 - **Node**
+- **Insomnia**
 
 ---
 
 ### **_How to Get Started_**
 
-- _Created a Trello Board to prepare for and track my progress of the project_ -_Created an ERD for the backend and a Component Hierarchy Diagram for the frontend_ -_Created database of cities with attributes of city name and description. Connected that to a database of Experiences with attributes of bucket list item, city ID, visited and review_
+- _Created a Trello Board to prepare for and track my progress of the project_
+- _Created an ERD for the backend and a Component Hierarchy Diagram for the frontend_
+- _Created database of cities with attributes of city name and description. Connected that to a database of Experiences with attributes of bucket list item, city ID, visited and review_
 - _Mongoose models and schemas: Cities, Experiences_
 - _Set up my routes and controllers using Express_
 - _Created components and pages and styling pages_
@@ -58,7 +61,7 @@ A website created in hopes of moving to or visiting Australia. A detailed descri
 - [ ] Next button page on each city page
 - [ ] Mobile friendly
 - [ ] More destinations
-- [x] ~~Added Tips page~~
+- [x] ~~Add Tips page~~
 
 ---
 
