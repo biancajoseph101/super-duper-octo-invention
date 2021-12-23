@@ -29,23 +29,24 @@ A website created in hopes of moving to or visiting Australia. A detailed descri
 
 ### **_How to Get Started_**
 
-- _Create data of cities with attributes of city name and descriptions. Create data of Things to do with attributes of city name and list of things to do_
-- _Mongoose models and schemas: Cities, Things To Do_
-- _Routes and controllers_
-- _Create components_
+- _Created a Trello Board to prepare for and track my progress of the project_ -_Created an ERD for the backend and a Component Hierarchy Diagram for the frontend_ -_Created database of cities with attributes of city name and description. Connected that to a database of Experiences with attributes of bucket list item, city ID, visited and review_
+- _Mongoose models and schemas: Cities, Experiences_
+- _Set up my routes and controllers using Express_
+- _Created components and pages and styling pages_
 
-  - _CityCard, CityDetailsCard, SubmitBucketList, Nav_
+  - _AddExperience, CityCard, ExperienceCard, TipInput, Tips, Nav_
 
-- _Pages and routes: Home(city cards), About, CityDetails_
-- _CSS: grid or flexbox_
+  - _Pages and routes: Home, About, CityDetails, Map, TipsList_
+
+  - _CSS: utilized grid and flexbox_
 
 ---
 
 ### **_Screenshots_**
 
-![Image](https://i.imgur.com/9N8wCpu.png)
+![Image](https://i.imgur.com/RQvX9y9.png)
 
-![Image](https://i.imgur.com/WSvpH6r.png)
+![Image](https://i.imgur.com/m9pmTAH.png)
 
 ![Image]()
 
@@ -53,9 +54,10 @@ A website created in hopes of moving to or visiting Australia. A detailed descri
 
 ### **_Future Updates_**
 
-- [ ] Search bar
+- [ ] Drop down list of cities
 - [ ] More users/login feature
 - [ ] Blog page
+- [ ] Next button page on each city page
 - [ ] Mobile friendly
 - [ ] More destinations
 - [x] ~~Added Tips page~~
