@@ -10,7 +10,7 @@
 
 ### **_Description_**
 
-A website created in hopes of moving to or visiting Australia. A detailed description of different cities with different things to do, including a personal 'bucket list' of experiences that I would like to experience in each city. Other people who are interested in learning more or traveling to Australia can visit my page and find ideas, reviews and travel tips. Possible future updates include expanding to more countries and adding a log in feature for other users to create their own bucket lists.
+A website created in hopes of moving to or visiting Australia. A detailed description of different cities with different things to do, including a personal 'bucket list' of experiences that I would like to experience in each city. Other people who are interested in learning more or traveling to Australia can visit my page and find ideas, reviews and travel tips. Possible future updates include expanding to more countries and adding a log in feature for other users to create their own bucket lists for different cities.
 
 ---
 
@@ -47,8 +47,6 @@ A website created in hopes of moving to or visiting Australia. A detailed descri
 ![Image](https://i.imgur.com/RQvX9y9.png)
 
 ![Image](https://i.imgur.com/m9pmTAH.png)
-
-![Image]()
 
 ---
 
